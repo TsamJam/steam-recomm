@@ -11,8 +11,7 @@ from urllib3.util.retry import Retry
 
 # ================= KONFIGURASI =================
 # Coba baca dari Secrets (untuk Deploy), jika gagal pakai Key Manual (untuk Lokal)
-try:
-    STEAM_API_KEY = st.secrets["STEAM_API_KEY"]
+STEAM_API_KEY = st.secrets["STEAM_API_KEY"]
 
 
 CSV_SOURCE = 'steam_large_dataset.csv'
